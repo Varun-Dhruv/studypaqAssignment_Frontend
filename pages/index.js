@@ -8,7 +8,8 @@ import Error from "../components/Error";
 export const getStaticProps = async () => {
   //const res = await fetch("https://www.reddit.com/r/images/new.json?limit=30");
 
-  let url = `http://${process.env.HOST}:${process.env.PORT}/images/`;
+  //let url = `http://${process.env.HOST}:${process.env.PORT}/images/`;
+  let url = `${process.env.URL}/images/`;
   let username = process.env.USER_NAME;
   let password = process.env.PASSWORD;
 
