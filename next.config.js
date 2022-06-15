@@ -3,4 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: [
+      "b.thumbs.redditmedia.com",
+      "a.thumbs.redditmedia.com",
+    ],
+  },
+  nextConfig,
+};

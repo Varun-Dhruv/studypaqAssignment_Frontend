@@ -1,4 +1,30 @@
-.container {
+.containertop {
+  margin:1em;
+  color: #0070f3;
+}
+.imagescontainer{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #f5f5f5;
+  border-radius: 1em;
+  /*display: grid;*/
+  column-gap: 5px;
+  row-gap: 3px;
+}
+.container_centered{
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.image {
+   margin:2em;
+   width:15em;
+   height: 15em;
+   box-shadow: 2px 2px rgb(0,0,0,0.1);
+}
+/* .container {
   padding: 0 2rem;
 }
 
@@ -113,4 +139,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
