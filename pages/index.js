@@ -22,15 +22,14 @@ export const getStaticProps = async () => {
     method: "GET",
     headers: headers,
     //credentials: 'user:passwd'
-  });
-  let err = false;
-  if (res.status != 200) {
+});
+   let err = false;
+   if (res.status != 200) {
     err = true;
-  }
+   }
   
   const data = await res.json();
   console.log(data);
-  //const data=JSON.parse(JSON.stringify(res));
   return {
     props: { "images": data.images, error: err },
   };
